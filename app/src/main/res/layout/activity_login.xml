@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="com.example.montanteapp.Activities.LoginActivity"
+              android:orientation="vertical"
+              android:background="@drawable/old_paper">
+
+
+    <TextView
+            android:id="@+id/email_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:textSize="20sp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:textStyle="italic|bold"
+            android:text="Ваш ящик для посланий"
+    />
+
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/email"
+            android:layout_below="@+id/email_view"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:drawableStart="@drawable/ic_email"
+            android:hint="..."
+            android:inputType="textEmailAddress"
+            android:padding="8dp" />
+    <TextView
+            android:id="@+id/pass_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:textSize="20sp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:textStyle="italic|bold"
+            android:text="Тайный пароль"
+    />
+
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="..."
+            android:id="@+id/password"
+            android:layout_below="@+id/pass_view"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:drawableStart="@drawable/password"
+            android:inputType="textPassword"
+            android:padding="8dp"
+    />
+
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ворваться в дуэльный зал!!!"
+            android:id="@+id/login"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/buttons"
+            android:layout_below="@+id/password"/>
+
+
+    <ImageView
+            android:id="@+id/blades"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_below="@id/login"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="50dp"
+            android:contentDescription="blades"
+            android:src="@drawable/epee"/>
+</LinearLayout>

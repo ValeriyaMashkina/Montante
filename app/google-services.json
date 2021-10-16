@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1029473807965",
+    "project_id": "montanteapp",
+    "storage_bucket": "montanteapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029473807965:android:5d702d5bf7e5b2162967b4",
+        "android_client_info": {
+          "package_name": "com.example.montanteapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029473807965-nbhvioma3oh23hfth4m6knp6ls491rmh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.montanteapp",
+            "certificate_hash": "465cc0edad019f44cf4e7527846aff3457222183"
+          }
+        },
+        {
+          "client_id": "1029473807965-fpg2hu21hcr9sfkq9fbi67tlait5v71t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvVs3Ghd56Be_ohIfxtN750whyYCuMT_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1029473807965-fpg2hu21hcr9sfkq9fbi67tlait5v71t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

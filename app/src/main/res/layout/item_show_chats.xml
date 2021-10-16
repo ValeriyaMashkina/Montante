@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="20sp"
+        android:id="@+id/item"
+>
+
+    <ImageView
+            android:layout_weight="0.5"
+            android:layout_width="170dp"
+            android:layout_height="80dp"
+            android:src="@drawable/fencer"
+            android:id="@+id/image"
+            />
+
+    <LinearLayout
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Имя"
+                android:fontFamily="cursive"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
+
+        <TextView
+                android:id="@+id/surname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Фамилия"
+                android:fontFamily="cursive"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
+
+        <TextView
+                android:id="@+id/chatId"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="invisible"
+                />
+
+        <TextView
+                android:id="@+id/rivalId"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="invisible"
+        />
+    </LinearLayout>
+</LinearLayout>

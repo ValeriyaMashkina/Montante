@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="com.example.montanteapp.Activities.SettingsActivity"
+              android:orientation="vertical"
+              android:background="@drawable/old_paper">
+
+
+    <ImageView
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:id="@+id/profileImage"
+            android:src="@drawable/old_paper"
+            android:layout_marginBottom="20sp"
+            android:gravity="center"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="10dp"/>
+
+    <TextView
+            android:id="@+id/name_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ваше имя"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textSize="15sp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:textStyle="italic|bold"
+    />
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:layout_below="@+id/name_view"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:padding="8dp"
+            android:inputType="textPersonName"
+    />
+    <TextView
+            android:id="@+id/surname_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ваша фамилия"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:textSize="15sp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:textStyle="italic|bold"
+    />
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/surname"
+            android:layout_below="@+id/surname_view"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:padding="8dp"
+            android:inputType="textPersonName"
+    />
+
+    <TextView
+            android:id="@+id/region_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Откуда вы:"
+            android:layout_below="@id/genderSelectGroup"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:textSize="15sp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:textStyle="italic|bold"/>
+
+    <Spinner
+            android:id="@+id/regionSpinner"
+            android:layout_below="@id/region_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.498"
+    />
+
+
+    <TextView
+            android:id="@+id/club_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Под чьими знаменами сражаетесь:"
+            android:layout_below="@id/regionSpinner"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:textSize="15sp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:textStyle="italic|bold"
+    />
+
+    <Spinner
+            android:id="@+id/clubSpinner"
+            android:layout_below="@id/club_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.498"
+    />
+
+
+    <TextView
+            android:id="@+id/weapon_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Какое оружие предпочитаете:"
+            android:layout_below="@id/clubSpinner"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:textSize="15sp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:textStyle="italic|bold"
+    />
+
+    <LinearLayout
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <CheckBox android:id="@+id/boxLongsword"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Длинный меч"
+                  android:fontFamily="cursive"
+                  android:textStyle="italic"/>
+        <CheckBox android:id="@+id/boxSwordBackler"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Меч и баклер"
+                  android:fontFamily="cursive"
+                  android:textStyle="italic"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textSize="15sp">
+        <CheckBox android:id="@+id/boxRapierDaga"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Рапира и дага"
+
+                  android:fontFamily="cursive"
+                  android:textStyle="italic"/>
+
+        <CheckBox android:id="@+id/boxRapierSolo"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Рапира solo"
+                  android:fontFamily="cursive"
+                  android:textStyle="italic"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+        <CheckBox android:id="@+id/boxSable"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Военная сабля"
+                  android:fontFamily="cursive"
+                  android:textStyle="italic"/>
+
+        <CheckBox android:id="@+id/boxMontante"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Монтанте"
+                  android:fontFamily="cursive"
+                  android:textStyle="italic"/>
+
+    </LinearLayout>
+
+
+    <Button
+            android:layout_width="200dp"
+            android:layout_height="32dp"
+            android:id="@+id/confirm"
+            android:layout_below="@id/weapon_view"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="10dp"
+            android:text="Изменить данные"
+            android:background="@drawable/buttons"
+            android:gravity="center"/>
+    <Button
+            android:layout_width="200dp"
+            android:layout_height="31dp"
+            android:id="@+id/back"
+
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="10dp"
+            android:text="Вернуться"
+            android:gravity="center"
+            android:background="@drawable/buttons"/>
+</LinearLayout>
